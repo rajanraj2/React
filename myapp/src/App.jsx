@@ -1,18 +1,15 @@
-import { Fragment } from "react";
-
-const a = "200ssf";
-
-const MyHeading = () => <h1>Heading</h1>;
+import MyHeading, { MyheadingLittle3 as MyCustomName, MyheadingLittle4 } from "./components/Myheading";
 
 function App() {
   return (
-    <Fragment>
+    <>
     <div>
-      <MyHeading />
-      <h1>Welocme page 1 {a}</h1>
+      <MyHeading name="Rajan" text="Nice one" price="23435"/>
+      <MyCustomName />
+      <MyheadingLittle4 />
       <p> This is a paragraph.</p>
     </div>
-    </Fragment>
+    </>
   )
 }
 
